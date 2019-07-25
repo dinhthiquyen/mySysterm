@@ -7,29 +7,24 @@
 </head>
 <body>
 <?php
-$hostname='localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'asm-webdesign';
-
-    // Create connection
-    $conn = mysqli_connect($hostname, $username, $password, $dbname);
+include 'db.php';
     // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    $sql = "SELECT * FROM product";
-    $result = $conn->query($sql);
+    $sql = "SELECT productid, image, price, discount, productname FROM product";
+                    $result = pg_query($connection,$sql);
     if ($result->num_rows > 0) {
         // output data of each row
-        while($row = $result->fetch_assoc()) {
+        while($row = pg_fetch_assoc($result)) {
+            $ProductId = $row['ProductId'];
+            $Price = $row['Price'];
+            $Image = $row['Image'];
+            $Origin = $row['Origin']
+            $ProductName = $row['ProductName'];
             ?>
         <div class="bodyRightContainer" action="Product.php">
             <a href="./Product-detail.php?ProductId=<?php echo $row["ProductId"]?>">
                 <img src= "<?php echo $row["Image"]?>" style="width: 200px; height: 250px;">
             </a><br>
             <span><?php echo $row["ProductName"]?></span><br>
-            <span>Ages: <?php echo $row["Age"]?></span><br>
             <span>Origin:<?php echo $row["Origin"]?></span><br>
             <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
         </div>
