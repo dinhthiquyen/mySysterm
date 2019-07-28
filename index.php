@@ -24,7 +24,7 @@
       </li>
       <li><a href="#">Toys</a></li>
       <li><a href="#">Accessories</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Contacts</a></li>
       <li>
          <marquee style="color: #DEE836"> No: 0909092222, Email: littlestpetshop@gmail.com</marquee>
       </li>

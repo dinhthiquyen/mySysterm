@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>Set data</title>
@@ -33,4 +33,4 @@ $hostname='localhost';
     }
     ?>
 </body>
-</html>
+</html> -->
