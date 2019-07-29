@@ -1,5 +1,5 @@
  <?php
-    include 'ketnoi.php';
+    include 'db.php';
     $productid =$_GET['productid'];
     $sql = "SELECT * FROM product where ProductId ='".$ProductId . "'";
     $result = pg_query($connection,$sql);

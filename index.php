@@ -201,37 +201,37 @@
     <b style="font-size: 20px;"> You can be care</b>
         <div class="leftContent">
           <a href="#">
-          <img src="images/care.jpg">
+          <img src="images/product1.jpg">
           <b>HOW TO TAKE CARE OF YOUR CATS?</b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/newcats1.jpg">
+          <img src="images/product1.jpg">
           <b>THE NEW CATS OF JULY: ALN CATS</b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/care.jpg">
+          <img src="images/product1.jpg">
           <b>THE TYPES OF PETS</b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/savannah.jpg">
+          <img src="images/product1.jpg">
           <b>THE NEW ACCESSORIES OF MAY</b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/newcats2.jpg">
+          <img src="images/product1.jpg">
           <b>THE NEW CATS OF MAY: SCOTTISH FOLD CATS </b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/ragdoll.jpg">
+          <img src="images/product1.jpg">
           <b>THE NEW TOYS OF JANUARY</b>
           </a>
         </div>
