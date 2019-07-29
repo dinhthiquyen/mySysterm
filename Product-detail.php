@@ -1,19 +1,17 @@
  <?php
-    $hostname='localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'asm-webdesign';
+    include 'ketnoi.php';
+    $productid =$_GET['productid'];
+    $sql = "SELECT * FROM product where ProductId ='".$ProductId . "'";
+    $result = pg_query($connection,$sql);
+    if (pg_num_rows($result) > 0) {
 
-    // Create connection
-    $conn = mysqli_connect($hostname, $username, $password, $dbname);
-    // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    $ProductId = $_GET['ProductId'];
-    $sql = "SELECT * FROM product where ProductId ='".$ProductId . "'";  
-    $result = $conn->query($sql);  
-    $row = $result->fetch_assoc();// lấy kết quả    
+   while($row = pg_fetch_assoc($result)) {
+        $productid = $row['ProductId'];
+          $price = $row['Price'];
+          $image = $row['Image'];
+          $productname = $row['ProductName'];
+          $description = $row['Description'];
+   
     ?>
 <!DOCTYPE html>
 <html lang="en">

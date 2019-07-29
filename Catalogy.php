@@ -6,11 +6,11 @@
 </head>
 <body>
 <?php
-include 'db.php';
-    // Check connection
+include 'ketnoi.php';
+        $ProductId =$_GET['ProductId'];
     $sql = "SELECT * FROM catalogy";
-                    $result = pg_query($connection,$sql);
-    if ($result->num_rows > 0) {
+    $result = pg_query($connection,$sql);
+    if (pg_num_rows($result) > 0) {
         // output data of each row
         while($row = pg_fetch_assoc($result)) {
             ?>       

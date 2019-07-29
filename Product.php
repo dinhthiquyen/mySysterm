@@ -1,11 +1,3 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Set data</title>
-	
-</head>
-<body>
 <?php
 include 'db.php';
     // Check connection
@@ -32,5 +24,3 @@ include 'db.php';
         }
     }
     ?>
-</body>
-</html>
