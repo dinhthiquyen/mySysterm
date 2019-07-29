@@ -1,6 +1,6 @@
  <?php
     include 'db.php';
-    $productid =$_GET['productid'];
+    $productid =$_GET['ProductId'];
     $sql = "SELECT * FROM product where ProductId ='".$ProductId . "'";
     $result = pg_query($connection,$sql);
     if (pg_num_rows($result) > 0) {
@@ -154,7 +154,6 @@
       <div>
           <img src= "<?php echo $row["Image"]?>" style="width: 100%; height: 600px;"><br>
           <span><?php echo $row["ProductName"]?></span><br>
-          <span>Ages: <?php echo $row["Age"]?></span><br>
           <span>Origin:<?php echo $row["Origin"]?></span><br>
           <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
           <p><?php echo $row["Description"]?></p>
