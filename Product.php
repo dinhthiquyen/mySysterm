@@ -18,12 +18,12 @@
 					<img src="<?= $Image; ?>" class="Image">
 					<div class="middle">
 				    <div class="discountbox">
-				    	<p>DISCOUNT <?= $discount; ?> % </p>
+				    	<p>DISCOUNT </p>
 				    	<p>ONLY 
 				    		<?php
-				    		$price=$row["Price"];
+				    		$Price=$row["Price"];
 				    
-				    		echo $price-($price * $discount /100);
+				    		echo $Price
 				    		?>$
 				    	</p>
 				 
@@ -32,12 +32,12 @@
 				</div>
 				</a>
 					<div class="thongtinproduct">
-						<span><?= $productname; ?>
+						<span><?= $ProductName; ?>
 							
 						</span><br>
 						<span class="explore" >EXPLORE NOW</span><br>
-								<img src="cart-2.png" alt="hình giỏ hàng">
-								<span><?= $price; ?> $</span>
+								<img src="cart.png" alt="hình giỏ hàng">
+								<span><?= $Price; ?> $</span>
 						
 					</div>
 			</div>
