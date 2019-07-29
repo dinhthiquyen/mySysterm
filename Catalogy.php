@@ -6,7 +6,7 @@
 </head>
 <body>
 <?php
-include 'ketnoi.php';
+include 'db.php';
         $ProductId =$_GET['ProductId'];
     $sql = "SELECT * FROM catalogy";
     $result = pg_query($connection,$sql);

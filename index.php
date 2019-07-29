@@ -131,8 +131,7 @@
 </nav>
 <div class="wallppaper">
     <div>
-     <!--  <div class="h1"></div> -->
-     <img src="" alt="">
+    <div class="h1"></div>
     <!--   <div class="text-brand"></div> -->
       <p align="center" id="name">Cat breeds are being sold</p>
     </div>
