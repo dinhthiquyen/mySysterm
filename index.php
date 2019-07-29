@@ -207,7 +207,7 @@
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/product1.jpg">
+          <img src="images/product2.jpg">
           <b>THE NEW CATS OF JULY: ALN CATS</b>
           </a>
         </div>
