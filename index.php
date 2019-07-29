@@ -155,31 +155,31 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img src="images/Product1.jpg" alt="">
+                <img src="images/product1.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>Scottish Fold Cats</h4>
                 </div>
               </div>
               <div class="item">
-                <img src="images/Product2.jpg" alt="">
+                <img src="images/product2.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>Aln Cats</h4>
                 </div>
               </div>
               <div class="item">
-                <img src="images/Product3.jpg" alt="">
+                <img src="images/product3.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>Savannah Cats</h4>
                 </div>
               </div>
               <div class="item">
-                <img src="images/Product4.jpg" alt="">
+                <img src="images/product4.jpg" alt="">
                 <div class="carousel-caption">
                   <h4>Ragdoll Cats</h4>
                 </div>
               </div>
               <div class="item">
-                <img src="images/Product5jpg" alt="">
+                <img src="images/product5jpg" alt="">
                 <div class="carousel-caption">
                    <h4>Sphynx Cats</h4>
                 </div>

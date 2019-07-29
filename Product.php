@@ -12,36 +12,13 @@
 		              	$ProductName = $row['ProductName'];
 		         
 		          ?>
-		        <div class="oneproduct">
-					<div class="faded">
-					<a class="hinhproduct" href="Product_detail.php?ProductId=<?= $ProductId; ?>">
-					<img src="<?= $Image; ?>" class="Image">
-					<div class="middle">
-				    <div class="discountbox">
-				    	<p>DISCOUNT </p>
-				    	<p>ONLY 
-				    		<?php
-				    		$Price=$row["Price"];
-				    
-				    		echo $Price
-				    		?>$
-				    	</p>
-				 
-				    </div>
-				  </div>
-				</div>
-				</a>
-					<div class="thongtinproduct">
-						<span><?= $ProductName; ?>
-							
-						</span><br>
-						<span class="explore" >EXPLORE NOW</span><br>
-								<img src="cart.png" alt="hình giỏ hàng">
-								<span><?= $Price; ?> $</span>
-						
-					</div>
-			</div>
-
-			
+		        <div class="bodyRightContainer" action="Product.php">
+                    <a href="./Product-detail.php?ProductId=<?php echo $row["ProductId"]?>">
+                        <img src= "<?php echo $row["Image"]?>" style="width: 200px; height: 250px;">
+                    </a><br>
+                    <span><?php echo $row["ProductName"]?></span><br>
+                    <span>Origin:<?php echo $row["Origin"]?></span><br>
+                    <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
+                </div>	
 		       <?php }} 
 		       ?>
