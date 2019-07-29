@@ -100,22 +100,6 @@ span.psw {
   float: right;
   padding-top: 16px;
 }
-@media (min-width: 1200px)
-.container {
-	/* width: 1170px; */
-	width: 0px;
-}
-@media (min-width: 992px)
-.container {
-	/* width: 970px; */
-	width: 0px;
-}
-
-@media (min-width: 768px)
-.container {
-	/* width: 750px; */
-	width: 0px;
-}
 
 /* The Modal (background) */
 .modal {
@@ -249,12 +233,15 @@ span.psw {
 } 
 .carousel-inner > .item > a > img {
 	box-sizing: border-box;
-    width: 200px;
-    height: 200px;
-    margin: auto;
+    width: 319px;
+    height: 250px;
+    margin: 0 auto;
   }
  .carousel{
  	width: 230px;
+ }
+ #myCarousel {
+	width: 319px;
  }
  /* FOOTER*/
 .footer{
