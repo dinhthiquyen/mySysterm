@@ -228,8 +228,8 @@ span.psw {
 	float: left;
 }
  .item{
-	height:250px;
-	width: 250px;
+	width: 319px;
+    height: 250px;
 } 
 .carousel-inner > .item > a > img {
 	box-sizing: border-box;
@@ -243,11 +243,7 @@ span.psw {
  #myCarousel {
 	width: 319px;
  }
- .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
-    display: block;
-    /* max-width: 100%; */
-    /* height: auto; */
-}
+
  /* FOOTER*/
 .footer{
 	background-color: black;
