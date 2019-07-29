@@ -1,10 +1,3 @@
- <!DOCTYPE html>
-<html>
-<head>
-	<title>Set data</title>
-	
-</head>
-<body>
 <?php
 include 'db.php';
         $ProductId =$_GET['ProductId'];
@@ -23,5 +16,3 @@ include 'db.php';
         }
     }
     ?>
-</body>
-</html> 

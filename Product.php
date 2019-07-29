@@ -3,7 +3,7 @@ include 'db.php';
     // Check connection
     $sql = "SELECT ProductId, Image, Price, ProductName, Origin FROM product";
                     $result = pg_query($connection,$sql);
-    if ($result->num_rows > 0) {
+    if (pg_num_rows($result) > 0) {
         // output data of each row
         while($row = pg_fetch_assoc($result)) {
             $ProductId = $row['ProductId'];
