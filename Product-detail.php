@@ -6,11 +6,11 @@
     if (pg_num_rows($result) > 0) {
 
    while($row = pg_fetch_assoc($result)) {
-        $productid = $row['ProductId'];
-          $price = $row['Price'];
-          $image = $row['Image'];
-          $productname = $row['ProductName'];
-          $description = $row['Description'];
+        $Productid = $row['ProductId'];
+          $Price = $row['Price'];
+          $Image = $row['Image'];
+          $ProductName = $row['ProductName'];
+          $Description = $row['Description'];
    
     ?>
 <!DOCTYPE html>
