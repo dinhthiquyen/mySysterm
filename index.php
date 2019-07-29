@@ -13,7 +13,7 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header" style="padding: 0; margin: 0;">
-      <a  href="Home.php"><img src="images/LTPlogo.png" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
+      <a  href="Home.php"><img src="" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="Home.php">Home</a></li>
@@ -131,8 +131,9 @@
 </nav>
 <div class="wallppaper">
     <div>
-      <div class="h1"></div>
-      <div class="text-brand"></div>
+     <!--  <div class="h1"></div> -->
+     <img src="" alt="">
+    <!--   <div class="text-brand"></div> -->
       <p align="center" id="name">Cat breeds are being sold</p>
     </div>
     <div class="right">
@@ -273,6 +274,6 @@
               <li><img src="images/phone.png"><span style="padding-left: 5px;">0909092222</span></li>
             </ul>
       </div>
-</div>
+</div> 
 </body>
 </html>

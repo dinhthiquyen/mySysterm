@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 	<title>Set data</title>
@@ -6,22 +6,13 @@
 </head>
 <body>
 <?php
-$hostname='localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'asm-webdesign';
-
-    // Create connection
-    $conn = mysqli_connect($hostname, $username, $password, $dbname);
+include 'db.php';
     // Check connection
-    if (!$conn) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
     $sql = "SELECT * FROM catalogy";
-    $result = $conn->query($sql);
+                    $result = pg_query($connection,$sql);
     if ($result->num_rows > 0) {
         // output data of each row
-        while($row1 = $result->fetch_assoc()) {
+        while($row = pg_fetch_assoc($result)) {
             ?>       
             <ul action="Catalogy.php" style="list-style-type: none;">
                 <a href="./Catalogy-detail.php?CatalogyId=<?php echo $row1["CatalogyId"]?>">
@@ -33,4 +24,4 @@ $hostname='localhost';
     }
     ?>
 </body>
-</html> -->
+</html> 
