@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Littelest PetS Shop</title>
+  <title>Littelest Shop</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="HomeCss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -136,106 +136,21 @@
       <p align="center" id="name">Cat breeds are being sold</p>
     </div>
     <div class="right">
-      <h3><b>SELLING IN MY SHOP</b></h3>
-      <?php include 'Product.php';?>
+      <h3><b>LIST OF PRODUCT</b></h3>
+      <table>
+        <tr>
+            <th>Images</th>
+            <th>Product Name</th>
+            <th>Originr</th>
+            <th>Price</th>
+        </tr>       
+              <tr>
+                  <?php include 'Product.php';?>
+              </tr>
+      </table>
+      
     </div>
-    <div class="left">
-      <div class="container">
-          <br>
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators have 3 ovel -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li><!-- dât-taget ovel, dât-slide-to transport-->
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
-              <li data-target="#myCarousel" data-slide-to="4"></li>
-            </ol>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img src="images/product1.jpg" alt="">
-                <div class="carousel-caption">
-                  <h4>Scottish Fold Cats</h4>
-                </div>
-              </div>
-              <div class="item">
-                <img src="images/product2.jpg" alt="">
-                <div class="carousel-caption">
-                  <h4>Aln Cats</h4>
-                </div>
-              </div>
-              <div class="item">
-                <img src="images/product3.jpg" alt="">
-                <div class="carousel-caption">
-                  <h4>Savannah Cats</h4>
-                </div>
-              </div>
-              <div class="item">
-                <img src="images/product4.jpg" alt="">
-                <div class="carousel-caption">
-                  <h4>Ragdoll Cats</h4>
-                </div>
-              </div>
-              <div class="item">
-                <img src="images/product5jpg" alt="">
-                <div class="carousel-caption">
-                   <h4>Sphynx Cats</h4>
-                </div>
-              </div>       
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-      </div>
-    </div>
-    <b style="font-size: 20px;"> You can be care</b>
-        <div class="leftContent">
-          <a href="#">
-          <img src="images/product1.jpg">
-          <b>HOW TO TAKE CARE OF YOUR CATS?</b>
-          </a>
-        </div>
-        <div class="leftContent">
-          <a href="#">
-          <img src="images/product2.jpg">
-          <b>THE NEW CATS OF JULY: ALN CATS</b>
-          </a>
-        </div>
-        <div class="leftContent">
-          <a href="#">
-          <img src="images/product1.jpg">
-          <b>THE TYPES OF PETS</b>
-          </a>
-        </div>
-        <div class="leftContent">
-          <a href="#">
-          <img src="images/product1.jpg">
-          <b>THE NEW ACCESSORIES OF MAY</b>
-          </a>
-        </div>
-        <div class="leftContent">
-          <a href="#">
-          <img src="images/product1.jpg">
-          <b>THE NEW CATS OF MAY: SCOTTISH FOLD CATS </b>
-          </a>
-        </div>
-        <div class="leftContent">
-          <a href="#">
-          <img src="images/product1.jpg">
-          <b>THE NEW TOYS OF JANUARY</b>
-          </a>
-        </div>
-</div>
 <div class="footer" >
   <div class="f1">
     <h4>Abount us</h4>

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Littelest PetS Shop</title>
+  <title>Littelest Shop</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="HomeCss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
