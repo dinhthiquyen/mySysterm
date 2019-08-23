@@ -12,7 +12,7 @@
         $ProductName = $row['ProductName'];
     
     ?>
-    <div class="bodyContainer" action="Product.php">
+    <div class="bodyRightContainer" action="Product.php">
         <tr>
             <td>
                 <a href="./Product-detail.php?ProductId=<?php echo $row["ProductId"]?>">
