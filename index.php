@@ -133,22 +133,21 @@
     <div>
     <div class="h1"></div>
     <!--   <div class="text-brand"></div> -->
-      <p align="center" id="name">Cat breeds are being sold</p>
+      <p align="center" id="name">LIST OF PRODUCT</p>
+      <hr/>
     </div>
     <div class="right">
-      <h3><b>LIST OF PRODUCT</b></h3>
-      <table>
+      <table class="table-product">
         <tr>
             <th>Images</th>
             <th>Product Name</th>
             <th>Originr</th>
             <th>Price</th>
         </tr>       
-              <tr>
-                  <?php include 'Product.php';?>
-              </tr>
-      </table>
-      
+        <tr>
+            <?php include 'Product.php';?>
+        </tr>
+      </table>   
     </div>
 
 <div class="footer" >

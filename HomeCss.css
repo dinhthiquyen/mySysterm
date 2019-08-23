@@ -199,10 +199,17 @@ span.psw {
 	margin: 1%;
 	height:auto;
 	width: 75%;
-	border: 1px solid pink;
 	float: left;
 	padding: 10px;
 
+}
+
+.table-product {
+	border: 1px solid pink;
+}
+.table-product th, td {
+	width: 20%;
+	padding: 10px;
 }
 .bodyRightContainer{
 	float: left;
