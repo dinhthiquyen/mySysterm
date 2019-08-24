@@ -12,7 +12,7 @@
         $ProductName = $row['ProductName'];
     
     ?>
-    <div action="ProductView.php">
+    <div class="bodyRightContainer" action="ProductView.php">
             <a href="./Product-detail.php?ProductId=<?php echo $row["ProductId"]?>">
                 <img src= "<?php echo $row["Image"]?>" style="width: 200px; height: 250px;">
             </a><br>
