@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Get data</title>
-	
-</head>
-<body>
-	<!-- lấy dữ liệu gửi lên phải dùng biến toàn cục $_GET hoăc $_POST -->
+
 	<?php 
-	require_once'db.php'; // link đến file php
+	require_once 'db.php'; // link đến file php
 
 	if(isset($_POST['uname'])&& isset($_POST['psw'])){
 		$uname = $_POST['uname'];
 		$psw = $_POST['psw'];
-		//tạo kết nối tới csdl
-		//lấy tất cả các bản ghi từ kết quả
 		$sql = "select * from accountuser where Username ='" .$uname . "' and Password ='" . $psw . "'";
 		$rows=pg_query($sql);
 		
@@ -28,4 +19,3 @@
 	else
 		echo"Can't recieve username and password";
 	?>
-</body>
