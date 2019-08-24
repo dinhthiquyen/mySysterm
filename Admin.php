@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	 <meta charset="utf-8">
-	  <link rel="stylesheet" type="text/css" href="style.css">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>Littelest PetS Shop</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header" style="padding: 0; margin: 0;">
+      <a  href="HomeAdmin.php"><img src="images/LTPlogo.png" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="HomeAdmin.php">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cat Breeds<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+            <?php include 'Catalogy2.php';?>
+        </ul>
+      </li>
+      <li><a href="#">Toys</a></li>
+      <li><a href="#">Accessories</a></li>
+      <li><a href="#">Contact</a></li>
+      <li>
+         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestpetshop@gmail.com</marquee>
+      </li>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <div id="divright">
+            <form action="timkiem.java">
+              <div id="containSearch">
+                <input type="text" placeholder="Search" style="padding: 7px;border-radius: 20px;">
+                <input id="btnsearch" type="submit" value="">
+              </div>
+            </form>
+          </div>
+        </li>
+        <li>
+          <a href="#"><span class="glyphicon glyphicon-shopping-cart" style="color: white; height: 10px; width: 10px;"></span></a>
+        </li>
+        <li>
+          <ul style="list-style-type: none;">
+            <li> <img src="images/Login2.png" style="width: 30px; height: 30px;"></li>
+            <li><a href="Home.php" style="color: gray;">Log out</a></li>
+          </ul>
+        </li> 
+    </ul>   
+   </ul>
+  </div>
+</nav>
 	<div class="wallppaper">
 		<div class="header">
 			<div>
