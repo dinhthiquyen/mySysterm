@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Littelest Shop</title>
+  <title>Littelest PetS Shop</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="HomeCss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,7 +13,7 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header" style="padding: 0; margin: 0;">
-      <a  href="Home.php"><img src="" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
+      <a  href="Home.php"><img src="images/LTPlogo.png" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="Home.php">Home</a></li>
@@ -24,7 +24,7 @@
       </li>
       <li><a href="#">Toys</a></li>
       <li><a href="#">Accessories</a></li>
-      <li><a href="#">Contacts</a></li>
+      <li><a href="#">Contact</a></li>
       <li>
          <marquee style="color: #DEE836"> No: 0909092222, Email: littlestpetshop@gmail.com</marquee>
       </li>
@@ -131,25 +131,111 @@
 </nav>
 <div class="wallppaper">
     <div>
-    <div class="h1"></div>
-    <!--   <div class="text-brand"></div> -->
-      <p align="center" id="name">LIST OF PRODUCT</p>
-      <hr/>
+      <div class="h1"></div>
+      <div class="text-brand"></div>
+      <p align="center" id="name">Cat breeds are being sold</p>
     </div>
     <div class="right">
-      <table class="table-product">
-        <tr>
-            <th>Images</th>
-            <th>Product Name</th>
-            <th>Originr</th>
-            <th>Price</th>
-        </tr>       
-        <tr>
-            <?php include 'Product.php';?>
-        </tr>
-      </table>   
+      <h3><b>SELLING IN MY SHOP</b></h3>
+      <?php include 'ProductView.php';?>
     </div>
+    <div class="left">
+      <div class="container">
+          <br>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators have 3 ovel -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li><!-- dât-taget ovel, dât-slide-to transport-->
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+            </ol>
 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/scottish.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Scottish Fold Cats</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/munchkin.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Aln Cats</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/savannah.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Savannah Cats</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/ragdoll.jpg" alt="">
+                <div class="carousel-caption">
+                  <h4>Ragdoll Cats</h4>
+                </div>
+              </div>
+              <div class="item">
+                <img src="images/sphynx.jpg" alt="">
+                <div class="carousel-caption">
+                   <h4>Sphynx Cats</h4>
+                </div>
+              </div>       
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+      </div>
+    </div>
+    <b style="font-size: 20px;"> You can be care</b>
+        <div class="leftContent">
+          <a href="#">
+          <img src="images/care.jpg">
+          <b>HOW TO TAKE CARE OF YOUR CATS?</b>
+          </a>
+        </div>
+        <div class="leftContent">
+          <a href="#">
+          <img src="images/newcats1.jpg">
+          <b>THE NEW CATS OF JULY: ALN CATS</b>
+          </a>
+        </div>
+        <div class="leftContent">
+          <a href="#">
+          <img src="images/care.jpg">
+          <b>THE TYPES OF PETS</b>
+          </a>
+        </div>
+        <div class="leftContent">
+          <a href="#">
+          <img src="images/savannah.jpg">
+          <b>THE NEW ACCESSORIES OF MAY</b>
+          </a>
+        </div>
+        <div class="leftContent">
+          <a href="#">
+          <img src="images/newcats2.jpg">
+          <b>THE NEW CATS OF MAY: SCOTTISH FOLD CATS </b>
+          </a>
+        </div>
+        <div class="leftContent">
+          <a href="#">
+          <img src="images/ragdoll.jpg">
+          <b>THE NEW TOYS OF JANUARY</b>
+          </a>
+        </div>
+</div>
 <div class="footer" >
   <div class="f1">
     <h4>Abount us</h4>
@@ -187,6 +273,6 @@
               <li><img src="images/phone.png"><span style="padding-left: 5px;">0909092222</span></li>
             </ul>
       </div>
-</div> 
+</div>
 </body>
 </html>

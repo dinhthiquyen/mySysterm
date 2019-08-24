@@ -12,11 +12,11 @@
         $ProductName = $row['ProductName'];
     
     ?>
-    <div class="bodyRightContainer" action="Product.php">
+    <div action="Product.php">
         <tr>
             <td>
                 <a href="./Product-detail.php?ProductId=<?php echo $row["ProductId"]?>">
-                    <img src= "<?php echo $row["Image"]?>" style="width: 200px; height: 250px;">
+                    <img src= "<?php echo $row["Image"]?>" style="width: 100px; height: 100px;">
                 </a>
             </td>
             
@@ -25,11 +25,20 @@
             </td>
 
             <td>
-                <span>Origin:<?php echo $row["Origin"]?></span>
+                <span><?php echo $row["Origin"]?></span>
             </td>
 
             <td>
-                <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
+                <span> <?php echo $row["Price"]?>$</span>
+            </td>
+
+             <td>
+                <span><?php echo $row["Description"]?></span>
+            </td>
+            <td>         
+                <button type="">Update</button>
+                <button type="" onclick="deleteProduct()">Delete</button>
+                    
             </td>
         <tr/>
     </div>	
