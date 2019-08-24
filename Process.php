@@ -29,4 +29,3 @@
 		echo"Can't recieve username and password";
 	?>
 </body>
-</html>
