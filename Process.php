@@ -15,13 +15,13 @@
 		//tạo kết nối tới csdl
 		//lấy tất cả các bản ghi từ kết quả
 		$sql = "select * from accountuser where Username ='" .$uname . "' and Password ='" . $psw . "'";
-		$rows=query($sql);
+		$rows=pg_query($sql);
 		
 		if(count($rows)>0){
 			echo"<h1>Log succesfully. Come back</h1>";
 			if ($uname == 'quyen' && $psw == '123') {
-				header("Location: http://localhost:8080/web/Asm/HomeAdmin.php"); /* Redirect browser */
-			}else header("Location: http://localhost:8080/web/Asm/Home2.php"); /* Redirect browser */
+				header("Location: https://selling-toys.herokuapp.com/Admin.php"); /* Redirect browser */
+			}else header("Location: https://selling-toys.herokuapp.com/index2.php); /* Redirect browser */
 		} else
 			echo"</h1>Log in fail. The account aren't exit</h1>";
 	}
