@@ -1,5 +1,5 @@
 
-	<?php 
+ <?php 
 	require_once 'db.php'; // link đến file php
 
 	if(isset($_POST['uname'])&& isset($_POST['psw'])){

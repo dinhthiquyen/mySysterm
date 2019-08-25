@@ -12,9 +12,6 @@
 <body>
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header" style="padding: 0; margin: 0;">
-      <a  href="Home.php"><img src="images/LTPlogo.png" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
-    </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="Home.php">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cat Breeds<span class="caret"></span></a>
@@ -26,7 +23,7 @@
       <li><a href="#">Accessories</a></li>
       <li><a href="#">Contact</a></li>
       <li>
-         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestpetshop@gmail.com</marquee>
+         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestshop@gmail.com</marquee>
       </li>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -155,33 +152,33 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img src="images/scottish.jpg" alt="">
+                <img src="images/product1.jpg" alt="">
                 <div class="carousel-caption">
-                  <h4>Scottish Fold Cats</h4>
+                  <h4>Easy-Bake Oven</h4>
                 </div>
               </div>
               <div class="item">
-                <img src="images/munchkin.jpg" alt="">
+                <img src="images/product2.jpg" alt="">
                 <div class="carousel-caption">
-                  <h4>Aln Cats</h4>
+                  <h4>Robotic dogs</h4>
                 </div>
               </div>
               <div class="item">
-                <img src="images/savannah.jpg" alt="">
+                <img src="images/product3.jpg" alt="">
                 <div class="carousel-caption">
-                  <h4>Savannah Cats</h4>
+                  <h4>LEGO Mindstorms NXT</h4>
                 </div>
               </div>
               <div class="item">
-                <img src="images/ragdoll.jpg" alt="">
+                <img src="images/product4.jpg" alt="">
                 <div class="carousel-caption">
-                  <h4>Ragdoll Cats</h4>
+                  <h4>Art dolls</h4>
                 </div>
               </div>
               <div class="item">
-                <img src="images/sphynx.jpg" alt="">
+                <img src="images/product5.jpg" alt="">
                 <div class="carousel-caption">
-                   <h4>Sphynx Cats</h4>
+                   <h4>Shrinky Dinks</h4>
                 </div>
               </div>       
             </div>
@@ -201,37 +198,37 @@
     <b style="font-size: 20px;"> You can be care</b>
         <div class="leftContent">
           <a href="#">
-          <img src="images/care.jpg">
-          <b>HOW TO TAKE CARE OF YOUR CATS?</b>
+          <img src="images/Product1.jpg">
+          <b>HOW TO TAKE CARE OF YOUR TOYS?</b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/newcats1.jpg">
-          <b>THE NEW CATS OF JULY: ALN CATS</b>
+          <img src="images/product2.jpg">
+          <b>THE NEW Toy OF JULY</b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/care.jpg">
-          <b>THE TYPES OF PETS</b>
+          <img src="images/product6.jpg">
+          <b>THE TYPES OF TOYS</b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/savannah.jpg">
+          <img src="images/product4.jpg">
           <b>THE NEW ACCESSORIES OF MAY</b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/newcats2.jpg">
-          <b>THE NEW CATS OF MAY: SCOTTISH FOLD CATS </b>
+          <img src="images/product2.jpg">
+          <b>THE NEW PETS OF MAY </b>
           </a>
         </div>
         <div class="leftContent">
           <a href="#">
-          <img src="images/ragdoll.jpg">
+          <img src="images/product3.jpg">
           <b>THE NEW TOYS OF JANUARY</b>
           </a>
         </div>
@@ -240,7 +237,7 @@
   <div class="f1">
     <h4>Abount us</h4>
     <ul>
-      <li>Introduc Littelest Pets Shop</li>
+      <li>Introduc Littelest Shop</li>
       <li>Recruitment</li>
       <li>Payment privacy policy</li>
       <li>Privacy policy</li>
@@ -267,9 +264,9 @@
       <div class="f4">
         <h4>Contact</h4>
             <ul>
-              <li><a href=""><img src="images/facebook.png"><span style="padding-left: 5px;">littestpestshopFacebook.com</span></a></li>
-              <li><a href=""><img src="images/gmail.png"><span style="padding-left: : 5px;">littlestpetshop@gmail.com</span></a></li>  
-              <li><a href=""><img src="images/twitter.png"><span style="padding-left: 5px;">littestpestshopTwittere.com</span></a></li>
+              <li><a href=""><img src="images/facebook.png"><span style="padding-left: 5px;">littestshopFacebook.com</span></a></li>
+              <li><a href=""><img src="images/gmail.png"><span style="padding-left: : 5px;">littlestshop@gmail.com</span></a></li>  
+              <li><a href=""><img src="images/twitter.png"><span style="padding-left: 5px;">littestshopTwittere.com</span></a></li>
               <li><img src="images/phone.png"><span style="padding-left: 5px;">0909092222</span></li>
             </ul>
       </div>
