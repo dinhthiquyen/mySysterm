@@ -1,14 +1,22 @@
  <?php
     include 'db.php';
-    $ProductId = $_GET['ProductId'];
-    $sql = "SELECT * FROM product where ProductId ='".$ProductId . "'";  
-    $result = $conn->query($sql);  
-    $row = $result->fetch_assoc();// lấy kết quả    
-    ?>
+    $productid =$_GET['ProductId'];
+                $sql = "SELECT ProductId, Image, Price, Origin, ProductName, Description FROM product  WHERE ProductId = '$ProductId'";
+                $result = pg_query($connection,$sql);
+                if (pg_num_rows($result) > 0) {
+                // output data of each row
+                while($row = pg_fetch_assoc($result)) {
+                  $ProductId = $row['ProductId'];
+                    $Price = $row['Price'];
+                    $Image = $row['Image'];
+                    $Origin = $row['Origin'];
+                    $ProductName = $row['ProductName'];
+                    $Description = $row['Description'];
+             
+              ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Littelest Shop</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="HomeCss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,9 +27,10 @@
 <body>
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
+    <div class="navbar-header" style="padding: 0; margin: 0;">
+      <a  href="Home.php"><img src="images/LTPlogo.png" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
+    </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="index.php">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Toys Breeds<span class="caret"></span></a>
         <ul class="dropdown-menu">
              <?php include 'Catalogy.php';?>
         </ul>
@@ -30,12 +39,10 @@
       <li><a href="#">Accessories</a></li>
       <li><a href="#">Contact</a></li>
       <li>
-         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestshop@gmail.com</marquee>
       </li>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <div id="divright">
-            <form action="">
               <div id="containSearch">
                 <input type="text" placeholder="Search" style="padding: 7px;border-radius: 20px;">
                 <input id="btnsearch" type="submit" value="">
@@ -137,12 +144,12 @@
     <div>
       <div class="h1"></div>
       <div class="text-brand"></div>
-      <p align="center" id="name">Toys breeds are being sold</p>
     </div>
     <div class="right">
       <div>
           <img src= "<?php echo $row["Image"]?>" style="width: 100%; height: 600px;"><br>
           <span><?php echo $row["ProductName"]?></span><br>
+          <span>Ages: <?php echo $row["Age"]?></span><br>
           <span>Origin:<?php echo $row["Origin"]?></span><br>
           <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
           <p><?php echo $row["Description"]?></p>
@@ -255,7 +262,7 @@
   <div class="f1">
     <h4>Abount us</h4>
     <ul>
-      <li>Introduc Littelest Shop</li>
+      <li>Introduc Littelest Pets Shop</li>
       <li>Recruitment</li>
       <li>Payment privacy policy</li>
       <li>Privacy policy</li>
