@@ -1,6 +1,6 @@
  <?php
     include 'db.php';
-    $productid =$_GET['ProductId'];
+    $ProductId =$_GET['ProductId'];
                 $sql = "SELECT ProductId, Image, Price, Origin, ProductName, Description FROM product  WHERE ProductId = '$ProductId'";
                 $result = pg_query($connection,$sql);
                 if (pg_num_rows($result) > 0) {
