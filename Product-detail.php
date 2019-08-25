@@ -6,17 +6,18 @@
     if (pg_num_rows($result) > 0) {
 
    while($row = pg_fetch_assoc($result)) {
-        $Productid = $row['ProductId'];
+        $ProductId = $row['ProductId'];
           $Price = $row['Price'];
           $Image = $row['Image'];
           $ProductName = $row['ProductName'];
           $Description = $row['Description'];
-   
+   }
+ }
     ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Littelest PetS Shop</title>
+  <title>Littelest Shop</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="HomeCss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +33,7 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="Home.php">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cat Breeds<span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Toys Breeds<span class="caret"></span></a>
         <ul class="dropdown-menu">
              <?php include 'Catalogy.php';?>
         </ul>
@@ -41,7 +42,7 @@
       <li><a href="#">Accessories</a></li>
       <li><a href="#">Contact</a></li>
       <li>
-         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestpetshop@gmail.com</marquee>
+         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestshop@gmail.com</marquee>
       </li>
       <ul class="nav navbar-nav navbar-right">
         <li>

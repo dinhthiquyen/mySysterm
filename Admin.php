@@ -13,8 +13,8 @@
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="HomeAdmin.php">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cat Breeds<span class="caret"></span></a>
+      <li class="active"><a href="Admin.php">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Toys Breeds<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <?php include 'Catalogy2.php';?>
         </ul>
@@ -23,7 +23,7 @@
       <li><a href="#">Accessories</a></li>
       <li><a href="#">Contact</a></li>
       <li>
-         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestpetshop@gmail.com</marquee>
+         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestshop@gmail.com</marquee>
       </li>
       <ul class="nav navbar-nav navbar-right">
         <li>
