@@ -17,6 +17,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Littelest PetS Shop</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="HomeCss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +32,8 @@
       <a  href="Home.php"><img src="images/LTPlogo.png" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
     </div>
     <ul class="nav navbar-nav">
+      <li class="active"><a href="Home.php">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cat Breeds<span class="caret"></span></a>
         <ul class="dropdown-menu">
              <?php include 'Catalogy.php';?>
         </ul>
@@ -39,10 +42,12 @@
       <li><a href="#">Accessories</a></li>
       <li><a href="#">Contact</a></li>
       <li>
+         <marquee style="color: #DEE836"> No: 0909092222, Email: littlestpetshop@gmail.com</marquee>
       </li>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <div id="divright">
+            <form action="timkiem.java">
               <div id="containSearch">
                 <input type="text" placeholder="Search" style="padding: 7px;border-radius: 20px;">
                 <input id="btnsearch" type="submit" value="">
@@ -144,6 +149,7 @@
     <div>
       <div class="h1"></div>
       <div class="text-brand"></div>
+      <p align="center" id="name">Cat breeds are being sold</p>
     </div>
     <div class="right">
       <div>
