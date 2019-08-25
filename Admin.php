@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Littelest PetS Shop</title>
+  <title>Littelest Shop</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +12,6 @@
 <body>
 <nav class="navbar navbar-fixed-top navbar-inverse">
   <div class="container-fluid">
-    <div class="navbar-header" style="padding: 0; margin: 0;">
-      <a  href="HomeAdmin.php"><img src="images/LTPlogo.png" style="padding: 0; margin: 0; height: 40px; width: 90px"></a>
-    </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="HomeAdmin.php">Home</a></li>
       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cat Breeds<span class="caret"></span></a>
@@ -64,6 +61,7 @@
 		<div class="body">
 			<div class="right">
 				<ul>
+					<li style="background: black; color: white;">Menu</li>
 					<li>Management Catalogy</li>
 					<li>Management User</li>
 					<li>Management Order</li>
@@ -89,7 +87,7 @@
 	  <div class="f1">
 	    <h4>Abount us</h4>
 	    <ul>
-	      <li>Introduc Littelest Pets Shop</li>
+	      <li>Introduc Littelest Shop</li>
 	      <li>Recruitment</li>
 	      <li>Payment privacy policy</li>
 	      <li>Privacy policy</li>
@@ -116,9 +114,9 @@
 	      <div class="f4">
 	        <h4>Contact</h4>
 	            <ul>
-	              <li><a href=""><img src="images/facebook.png"><span style="padding-left: 5px;">littestpestshopFacebook.com</span></a></li>
-	              <li><a href=""><img src="images/gmail.png"><span style="padding-left: : 5px;">littlestpetshop@gmail.com</span></a></li>  
-	              <li><a href=""><img src="images/twitter.png"><span style="padding-left: 5px;">littestpestshopTwittere.com</span></a></li>
+	              <li><a href=""><img src="images/facebook.png"><span style="padding-left: 5px;">littestshopFacebook.com</span></a></li>
+	              <li><a href=""><img src="images/gmail.png"><span style="padding-left: : 5px;">littlestshop@gmail.com</span></a></li>  
+	              <li><a href=""><img src="images/twitter.png"><span style="padding-left: 5px;">littestshopTwittere.com</span></a></li>
 	              <li><img src="images/phone.png"><span style="padding-left: 5px;">0909092222</span></li>
 	            </ul>
 	      </div>

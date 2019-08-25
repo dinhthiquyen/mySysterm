@@ -223,7 +223,7 @@
         <div class="leftContent">
           <a href="#">
           <img src="images/product2.jpg">
-          <b>THE NEW PETS OF MAY </b>
+          <b>THE NEW TOYS OF MAY </b>
           </a>
         </div>
         <div class="leftContent">
