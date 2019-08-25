@@ -1,6 +1,6 @@
  <?php
     include 'db.php';
-    $productid =$_GET['ProductId'];
+    $ProductId =$_GET['ProductId'];
     $sql = "SELECT * FROM product where ProductId ='".$ProductId . "'";
     $result = pg_query($connection,$sql);
     if (pg_num_rows($result) > 0) {

@@ -130,7 +130,7 @@
     <div>
       <div class="h1"></div>
       <div class="text-brand"></div>
-      <p align="center" id="name">Cat breeds are being sold</p>
+      <p align="center" id="name">Toys breeds are being sold</p>
     </div>
     <div class="right">
       <h3><b>SELLING IN MY SHOP</b></h3>
@@ -198,7 +198,7 @@
     <b style="font-size: 20px;"> You can be care</b>
         <div class="leftContent">
           <a href="#">
-          <img src="images/Product1.jpg">
+          <img src="images/product1.jpg">
           <b>HOW TO TAKE CARE OF YOUR TOYS?</b>
           </a>
         </div>
