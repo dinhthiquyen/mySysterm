@@ -12,7 +12,7 @@
 			echo"<h1>Log succesfully. Come back</h1>";
 			if ($uname == 'quyen' && $psw == '123') {
 				header("Location: https://selling-toys.herokuapp.com/Admin.php"); /* Redirect browser */
-			}else header("Location: https://selling-toys.herokuapp.com/index2.php"); /* Redirect browser */
+			}else header("Location: https://selling-toys.herokuapp.com/index.php"); /* Redirect browser */
 		} else
 			echo"</h1>Log in fail. The account aren't exit</h1>";
 	}
