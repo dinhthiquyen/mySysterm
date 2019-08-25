@@ -28,7 +28,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li>
           <div id="divright">
-            <form action="timkiem.java">
+            <form action="">
               <div id="containSearch">
                 <input type="text" placeholder="Search" style="padding: 7px;border-radius: 20px;">
                 <input id="btnsearch" type="submit" value="">
@@ -42,7 +42,7 @@
         <li>
           <ul style="list-style-type: none;">
             <li> <img src="images/Login2.png" style="width: 30px; height: 30px;"></li>
-            <li><a href="Home.php" style="color: gray;">Log out</a></li>
+            <li><a href="index.php" style="color: gray;">Log out</a></li>
           </ul>
         </li> 
     </ul>   
