@@ -1,17 +1,9 @@
-<?php
+ <?php
     include 'db.php';
-    $ProductId =$_GET['ProductId'];
-    $sql = "SELECT * FROM product WHERE ProductId = '$ProductId'";
-    $result = pg_query($connection,$sql);
-    if (pg_num_rows($result) > 0) {
-    // output data of each row
-    while($row = pg_fetch_assoc($result)) {
-        $ProductId = $row['ProductId'];
-        $Price = $row['Price'];
-        $Image = $row['Image'];
-    
-        $ProductName = $row['ProductName'];
-    
+    $ProductId = $_GET['ProductId'];
+    $sql = "SELECT * FROM product where ProductId ='".$ProductId . "'";  
+    $result = $conn->query($sql);  
+    $row = $result->fetch_assoc();// lấy kết quả    
     ?>
 <!DOCTYPE html>
 <html lang="en">
