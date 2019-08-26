@@ -1,18 +1,11 @@
-<?php  
-include 'db.php';
-$ProductId = $_GET['ProductId'];
-
-$sql2 ="DELETE FROM product WHERE ProductId = '$ProductId'";
-
-$result = pg_query($connection, $sql2);
-$cmdtuples = pg_affected_rows($result);
-echo $cmdtuples . " record affected.\n";
-if (!$result) {
-    $errormessage = pg_last_error();
-    echo "Error with query: " . $errormessage;
-    exit();
-}
-
-header('location:https://selling-toys.herokuapp.com/Admin.php');
-
+<?php
+require("db.php");
+$id = $_POST['ProductId'];
+$sql = "DELETE FROM product WHERE ProductId = '$id'";
+pg_query($connection,$sql); 
 ?>
+
+<script>
+    alert("Delete successfully!!");
+    window.location.href = "/index.php";
+</script>
