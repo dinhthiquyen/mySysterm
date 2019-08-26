@@ -138,29 +138,51 @@
     </div>
     <div class="right">
       <?php
-        include 'db.php';
-        $ProductId =$_GET['ProductId'];
-                    $sql = "SELECT * FROM product  WHERE ProductId = '".$ProductId."'";
-                    $result = pg_query($connection,$sql);
-                    if (pg_num_rows($result) > 0) {
-                    // output data of each row
-                    while($row = pg_fetch_assoc($result)) {
-                         ?>
-                   <div action="Product.php">
-                      <img src= "<?php echo $row["Image"]?>" style="width: 100%; height: 600px;"><br>
-                      <span><?php echo $row["ProductName"]?></span><br>
-                      <span>Origin:<?php echo $row["Origin"]?></span><br>
-                      <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
-                      <p><?php echo $row["Description"]?></p>
-                      <button onclick="show()">Buy Now</button>
-                      <script type="text/javascript">
-                        function show(){
-                          alert("Please Log in!");
-                        }
-                      </script>
-                  </div>
-         <?php }} 
-      ?>
+    include 'db.php';
+    $ProductId = $_GET['ProductId'];
+    $sql = "SELECT * FROM product where ProductId = '".$ProductId."'";
+    $result = pg_query($connection,$sql);
+    if (pg_num_rows($result) > 0) {
+    // output data of each row
+    while($row = pg_fetch_assoc($result)) {
+        $ProductId = $row['ProductId'];
+        $Price = $row['Price'];
+        $Image = $row['Image'];
+        $ProductName = $row['ProductName'];
+    
+    ?>
+    <div action="Product.php">
+        <tr>
+            <td>
+                <a href="./Product-detail.php?ProductId=<?php echo $row["ProductId"]?>">
+                    <img src= "<?php echo $row["Image"]?>" style="width: 100px; height: 100px;">
+                </a>
+            </td>
+            
+            <td>
+                <span><?php echo $row["ProductName"]?></span>
+            </td>
+
+            <td>
+                <span><?php echo $row["Origin"]?></span>
+            </td>
+
+            <td>
+                <span> <?php echo $row["Price"]?>$</span>
+            </td>
+
+             <td>
+                <span><?php echo $row["Description"]?></span>
+            </td>
+            <td>         
+                <button type="">Update</button>
+                <button type="" onclick="deleteProduct()">Delete</button>
+                    
+            </td>
+        <tr/>
+    </div>  
+    <?php }} 
+?>
     </div>
     <div class="left">
       <div class="container">
