@@ -1,19 +1,4 @@
- <?php
-    include 'db.php';
-    $ProductId =$_GET['ProductId'];
-                $sql = "SELECT ProductId, Image, Price, Origin, ProductName, Description FROM product  WHERE ProductId = '$ProductId'";
-                $result = pg_query($connection,$sql);
-                if (pg_num_rows($result) > 0) {
-                // output data of each row
-                while($row = pg_fetch_assoc($result)) {
-                  $ProductId = $row['ProductId'];
-                    $Price = $row['Price'];
-                    $Image = $row['Image'];
-                    $Origin = $row['Origin'];
-                    $ProductName = $row['ProductName'];
-                    $Description = $row['Description'];
-             
-              ?>
+ 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,10 +137,24 @@
       <p align="center" id="name">Cat breeds are being sold</p>
     </div>
     <div class="right">
-      <div>
+      <?php
+    include 'db.php';
+    $ProductId =$_GET['ProductId'];
+                $sql = "SELECT ProductId, Image, Price, Origin, ProductName, Description FROM product  WHERE ProductId = '$ProductId'";
+                $result = pg_query($connection,$sql);
+                if (pg_num_rows($result) > 0) {
+                // output data of each row
+                while($row = pg_fetch_assoc($result)) {
+                  $ProductId = $row['ProductId'];
+                    $Price = $row['Price'];
+                    $Image = $row['Image'];
+                    $Origin = $row['Origin'];
+                    $ProductName = $row['ProductName'];
+                    $Description = $row['Description'];
+                     ?>
+                     <div>
           <img src= "<?php echo $row["Image"]?>" style="width: 100%; height: 600px;"><br>
           <span><?php echo $row["ProductName"]?></span><br>
-          <span>Ages: <?php echo $row["Age"]?></span><br>
           <span>Origin:<?php echo $row["Origin"]?></span><br>
           <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
           <p><?php echo $row["Description"]?></p>
@@ -166,6 +165,10 @@
             }
           </script>
       </div>
+             
+             
+         <?php }} 
+?>
     </div>
     <div class="left">
       <div class="container">
