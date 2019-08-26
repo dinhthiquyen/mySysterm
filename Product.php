@@ -36,10 +36,7 @@
             </td>
             <td>         
                 <button type="">Update</button>
-                <form action='/Delete.php' method="POST">
-                    <input type='hidden' name='ProductId' value='<?php echo $row['ProductId']?>'>
-                    <input type='submit' value='Delete'>
-                </form>
+                <a href="./Delete.php?ProductId=<?php echo $row["ProductId"]?>"><button type="">Delete</button></a>
             </td>
         <tr/>
     </div>	
