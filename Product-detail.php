@@ -145,14 +145,8 @@
                     if (pg_num_rows($result) > 0) {
                     // output data of each row
                     while($row = pg_fetch_assoc($result)) {
-                      $ProductId = $row['ProductId'];
-                        $Price = $row['Price'];
-                        $Image = $row['Image'];
-                        $Origin = $row['Origin'];
-                        $ProductName = $row['ProductName'];
-                        $Description = $row['Description'];
                          ?>
-                   <div action="Product-detail.php">
+                   <div action="Product.php">
                       <img src= "<?php echo $row["Image"]?>" style="width: 100%; height: 600px;"><br>
                       <span><?php echo $row["ProductName"]?></span><br>
                       <span>Origin:<?php echo $row["Origin"]?></span><br>
