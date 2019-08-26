@@ -36,13 +36,7 @@
             </td>
             <td>         
                 <button type="">Update</button>
-                <button type="" onclick="deleteProduct()" ProductId="<?php $ProductId ?>">Delete</button>
-                    <script type="text/javascript">
-                          function deleteProduct(){
-                            alert(ProductId);
-                            
-                          }
-                     </script>
+                <a href="./Delete.php?ProductId=<?php echo $row["ProductId"]?>"><button type="">Delete</button></a>
             </td>
         <tr/>
     </div>	
