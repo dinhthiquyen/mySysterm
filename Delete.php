@@ -2,7 +2,7 @@
 include 'db.php';
 $ProductId = $_GET['ProductId'];
 
-$sql2 ="DELETE FROM product WHERE ProductId = '$ProductId'";
+$sql2 ="DELETE FROM product WHERE product.ProductId = '$ProductId'";
 
 $result = pg_query($connection,$sql2);
 $cmdtuples = pg_affected_rows($result);
