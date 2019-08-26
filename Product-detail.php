@@ -154,9 +154,9 @@
                       ?>
                    <div>
                       <img src= "<?= $Image; ?>" style="width: 100%; height: 600px;"><br>
-                      <span><?php echo $row["ProductName"]?></span><br>
-                      <span>Origin:<?php echo $row["Origin"]?></span><br>
-                      <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
+                      <span><?=$ProductName; ?></span><br>
+                      <span>Origin:<?= $Origin;?></span><br>
+                      <span><a href="Buy.html"><img src="images/crafs.png"></a> <?=$Price;?>$</span>
                       <p><?= $Description; ?></p>
                       <button onclick="show()">Buy Now</button>
                       <script type="text/javascript">
