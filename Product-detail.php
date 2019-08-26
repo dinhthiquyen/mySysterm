@@ -140,7 +140,7 @@
       <?php
         include 'db.php';
         $ProductId =$_GET['ProductId'];
-                    $sql = "SELECT ProductId, Image, Price, Origin, ProductName, Description FROM product  WHERE ProductId = '$ProductId'";
+                    $sql = "SELECT * FROM product  WHERE ProductId = '".$ProductId."'";
                     $result = pg_query($connection,$sql);
                     if (pg_num_rows($result) > 0) {
                     // output data of each row
