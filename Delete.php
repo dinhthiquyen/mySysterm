@@ -4,7 +4,7 @@ $ProductId = $_GET['ProductId'];
 
 $sql2 ="DELETE FROM product WHERE ProductId = '$ProductId'";
 
-$result = pg_query($conn, $sql2);
+$result = pg_query($connection, $sql2);
 $cmdtuples = pg_affected_rows($result);
 echo $cmdtuples . " record affected.\n";
 if (!$result) {
