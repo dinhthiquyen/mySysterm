@@ -1,5 +1,5 @@
 <?php  
-include 'db.php';
+require_once 'db.php';
 $ProductId = $_GET['ProductId'];
 
 $sql2 ="DELETE FROM product WHERE ProductId = '$ProductId'";
