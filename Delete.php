@@ -7,5 +7,5 @@ pg_query($connection,$sql);
 
 <script>
     alert("Delete successfully!!");
-    window.location.href = "/index.php";
+    window.location.href = "/Admin.php";
 </script>
