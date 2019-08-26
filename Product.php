@@ -36,10 +36,11 @@
             </td>
             <td>         
                 <button type="">Update</button>
-                <button type="" onclick="deleteProduct()">Delete</button>
+                <button type="" onclick="deleteProduct()" ProductId="<?php $ProductId ?>">Delete</button>
                     <script type="text/javascript">
                           function deleteProduct(){
-                            alert("Please Log in!");
+                            alert(ProductId);
+                            
                           }
                      </script>
             </td>
