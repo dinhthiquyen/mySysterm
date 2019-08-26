@@ -8,7 +8,6 @@
         $ProductId = $row['ProductId'];
         $Price = $row['Price'];
         $Image = $row['Image'];
-    
         $ProductName = $row['ProductName'];
     
     ?>
@@ -38,7 +37,11 @@
             <td>         
                 <button type="">Update</button>
                 <button type="" onclick="deleteProduct()">Delete</button>
-                    
+                    <script type="text/javascript">
+                          function deleteProduct(){
+                            alert("Please Log in!");
+                          }
+                     </script>
             </td>
         <tr/>
     </div>	

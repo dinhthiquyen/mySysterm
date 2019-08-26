@@ -133,7 +133,7 @@
       <p align="center" id="name">Toys breeds are being sold</p>
     </div>
     <div class="right">
-          <?php
+      <?php
         include 'db.php';
         $ProductId =$_GET['ProductId'];
                     $sql = "SELECT * FROM product WHERE ProductId = '$ProductId'";
@@ -149,18 +149,18 @@
                         $Description = $row['Description'];
                       ?>
                    <div>
-                      <img src= "<?= $Image; ?>" style="width: 100%; height: 600px;"><br>
-                      <span><?=$ProductName; ?></span><br>
-                      <span>Origin:<?= $Origin;?></span><br>
-                      <span><a href="Buy.html"><img src="images/crafs.png"></a> <?=Price;?>$</span>
-                      <p><?= $Description; ?></p>
-                      <button onclick="show()">Buy Now</button>
-                      <script type="text/javascript">
-                        function show(){
-                          alert("Please Log in!");
-                        }
-                      </script>
-                  </div>
+                        <img src= "<?php echo $row["Image"]?>" style="width: 100%; height: 600px;"><br>
+                        <span><?php echo $row["ProductName"]?></span><br>
+                        <span>Origin:<?php echo $row["Origin"]?></span><br>
+                        <span><a href="Buy.html"><img src="images/crafs.png"></a> <?php echo $row["Price"]?>$</span>
+                        <p><?php echo $row["Description"]?></p>
+                        <button onclick="show()">Buy Now</button>
+                        <script type="text/javascript">
+                          function show(){
+                            alert("Please Log in!");
+                          }
+                        </script>
+                    </div>
          <?php }} 
       ?>
 
