@@ -73,7 +73,7 @@
                    <input type='submit' value="Add Product" class="btn btn-danger navbar-btn" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">    
                 </form>
 		            <div id="id03" class="modal">
-		              <form class="modal-content animate" action="Update.php" method="POST">
+		              <form class="modal-content animate" action="AddProduct.php" method="POST">
 		                <div class="container">     
 		                            <label for="PrName"><b>Product Name:</b></label>
 		                            <input type="text" name="PrName" required>
