@@ -69,9 +69,7 @@
 				</ul>
 			</div>
 			<div class="left">
-				<form action='/AddProduct.php' method="POST">
-                   <input type='submit' value="Add Product" class="btn btn-danger navbar-btn" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">    
-                </form>
+                   <button class="btn btn-danger navbar-btn" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Add Product</button>     
 		            <div id="id03" class="modal">
 		              <form class="modal-content animate" action="AddProduct.php" method="POST">
 		                <div class="container">     
