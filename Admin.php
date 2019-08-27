@@ -75,9 +75,6 @@
 		                <div class="container">     
 		                            <label for="PrName"><b>Product Name:</b></label>
 		                            <input type="text" name="PrName" required>
-		             
-		                            <label for="Age"><b>Ages: </b></label>
-		                            <input type="text" name="Age" required> 
 		                
 		                            <label for="Origin"><b>Origin:</b></label>
 		                            <input type="text" name="Origin" required></td>

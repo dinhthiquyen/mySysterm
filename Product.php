@@ -31,7 +31,7 @@
                 <span><?php echo $row["description"]?></span>
             </td>
             <td>         
-                <button class="btn btn-danger navbar-btn" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Update</button>
+                <button class="btn btn-danger navbar-btn" onclick="document.getElementById('id04').style.display='block'" style="width:auto;">Update</button>
             <div id="id03" class="modal">
               <form class="modal-content animate" action="Update.php" method="POST">
                 <div class="container">
@@ -56,14 +56,14 @@
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">
-                  <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="button" onclick="document.getElementById('id04').style.display='none'" class="cancelbtn">Cancel</button>
                   <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
                 </div>
               </form>
             </div>
             <script>
             // Get the modal
-            var modal = document.getElementById('id03');
+            var modal = document.getElementById('id04');
 
             // When the user clicks anywhere outside of the modal, close it
             window.onclick = function(event) {
