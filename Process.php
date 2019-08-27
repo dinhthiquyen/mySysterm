@@ -5,7 +5,7 @@
 	if(isset($_POST['uname'])&& isset($_POST['psw'])){
 		$uname = $_POST['uname'];
 		$psw = $_POST['psw'];
-		$sql = "select * from accountuser where Username ='" .$uname . "' and Password ='" . $psw . "'";
+		$sql = "select * from accountuser where username ='" .$uname . "' and password ='" . $psw . "'";
 		$rows=pg_query($sql);
 		
 		if(count($rows)>0){

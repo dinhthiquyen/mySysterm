@@ -1,8 +1,8 @@
 <?php  
 include 'db.php';
-$ProductId = $_GET['ProductId'];
+$productid = $_GET['productid'];
 
-$sql2 ="DELETE FROM product where product.ProductId = " .$ProductId;
+$sql2 ="DELETE FROM product where productid = " .$productid;
 
 $result = pg_query($connection,$sql2);
 $cmdtuples = pg_affected_rows($result);
