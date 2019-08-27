@@ -72,7 +72,10 @@
                    <button class="btn btn-danger navbar-btn" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Add Product</button>     
 		            <div id="id03" class="modal">
 		              <form class="modal-content animate" action="AddProduct.php" method="POST">
-		                <div class="container">     
+		                <div class="container">    
+		                			<label for="Id"><b>ID:</b></label>
+		                            <input type="text" name="Id" required> 
+
 		                            <label for="PrName"><b>Product Name:</b></label>
 		                            <input type="text" name="PrName" required>
 		                
