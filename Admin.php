@@ -69,6 +69,46 @@
 				</ul>
 			</div>
 			<div class="left">
+				<form action='/AddProduct.php' method="POST">
+                   <input type='submit' value="Add Product" class="btn btn-danger navbar-btn" onclick="document.getElementById('id03').style.display='block'" style="width:auto;">    
+                </form>
+		            <div id="id03" class="modal">
+		              <form class="modal-content animate" action="Update.php" method="POST">
+		                <div class="container">     
+		                            <label for="PrName"><b>Product Name:</b></label>
+		                            <input type="text" name="PrName" required>
+		             
+		                            <label for="Age"><b>Ages: </b></label>
+		                            <input type="text" name="Age" required> 
+		                
+		                            <label for="Origin"><b>Origin:</b></label>
+		                            <input type="text" name="Origin" required></td>
+
+		                            <label for="Price"><b>Price:</b></label>
+		                            <input type="text" name="Price" required></td>
+
+		                            <label for="Des"><b>Description:</b></label>
+		                            <input type="text" name="Des" required> <p style="margin-top: 10px; margin-left: 90px;"></p>
+
+		                             <button style="width: 100px;">Add Product</button>
+		                </div>
+		                <div class="container" style="background-color:#f1f1f1">
+		                  <button type="button" onclick="document.getElementById('id03').style.display='none'" class="cancelbtn">Cancel</button>
+		                  <!-- <span class="psw">Forgot <a href="#">password?</a></span> -->
+		                </div>
+		              </form>
+		            </div>
+		            <script>
+		            // Get the modal
+		            var modal = document.getElementById('id03');
+
+		            // When the user clicks anywhere outside of the modal, close it
+		            window.onclick = function(event) {
+		                if (event.target == modal) {
+		                    modal.style.display = "none";
+		                }
+		            }
+		            </script>
 				<table class="table-product">
 			        <tr>
 			            <th>Images</th>
