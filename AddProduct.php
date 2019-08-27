@@ -1,5 +1,4 @@
-    <?php 
-
+ <?php 
     include 'db.php';
 
     if(isset($_POST['PrName'])&&  isset($_POST['Origin'])&& isset($_POST['Des'])&& isset($_POST['Price']))
