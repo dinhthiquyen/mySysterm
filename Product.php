@@ -32,27 +32,27 @@
             </td>
             <td>         
                 <button class="btn btn-danger navbar-btn" onclick="document.getElementById('id04').style.display='block'" style="width:auto;">Update</button>
-            <div id="id03" class="modal">
+            <div id="id04" class="modal">
               <form class="modal-content animate" action="Update.php" method="POST">
                 <div class="container">
-                            <img src="<?php echo $row["image"]?>" alt="Avatar" class="avatar"><br>
-                            ID: <br>
-                            <input type="hidden" name="id" class="txtField" value="<?php echo $row['productid']; ?>">
-                            <input type="text" name="id"  value="<?php echo $row['productid']; ?>">
-                            <br>
-                            Product Name: <br>
-                            <input type="text" name="PrName" class="txtField" value="<?php echo $row["productname"];?>">
-                            <br>
-                            Origin<br>
-                            <input type="text" name="Origin" class="txtField" value="<?php echo $row["origin"];?>">
-                            <br>
-                            Price<br>
-                            <input type="text" name="Price" class="txtField" value="<?php echo $row["price"];?>">
-                            <br>
-                            Description::<br>
-                            <input type="text" name="Des" class="txtField" value="<?php echo $row["description"];?>">
-                            <br>
-                            <input type="submit" name="submit" value="Submit" class="buttom">
+                    <img src="<?php echo $row["image"]?>" alt="Avatar" class="avatar"><br>
+                    ID: <br>
+                    <input type="hidden" name="id" class="txtField" value="<?php echo $row['productid']; ?>">
+                    <input type="text" name="id"  value="<?php echo $row['productid']; ?>">
+                    <br>
+                    Product Name: <br>
+                    <input type="text" name="PrName" class="txtField" value="<?php echo $row["productname"];?>">
+                    <br>
+                    Origin<br>
+                    <input type="text" name="Origin" class="txtField" value="<?php echo $row["origin"];?>">
+                    <br>
+                    Price<br>
+                    <input type="text" name="Price" class="txtField" value="<?php echo $row["price"];?>">
+                    <br>
+                    Description::<br>
+                    <input type="text" name="Des" class="txtField" value="<?php echo $row["description"];?>">
+                    <br>
+                    <input type="submit" name="submit" value="Submit" class="buttom">
                 </div>
 
                 <div class="container" style="background-color:#f1f1f1">
