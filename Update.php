@@ -6,13 +6,12 @@
 	{	
 		$id = $_POST['id'];
 		$PrName = $_POST['PrName'];
-		$Age = $_POST['Age'];
 		$Origin = $_POST['Origin'];
 		$Des = $_POST['Des'];
 		$Price = $_POST['Price'];
 		//tạo kết nối tới csdl
 		//lấy tất cả các bản ghi từ kết quả
-		$sql = "UPDATE product SET productname='$PrName', origin='$Origin',description='$Des', price='$Price'
+		$sql = "UPDATE product SET productname='$PrName', origin='$Origin', description='$Des', price='$Price'
 		WHERE productid = '$id'";
 		$rows=query($sql);
 		

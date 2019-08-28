@@ -5,14 +5,12 @@
     {   
         $Id = $_POST['Id'];   
         $PrName = $_POST['PrName'];
-        $Age = $_POST['Age'];
         $Origin = $_POST['Origin'];
         $Des = $_POST['Des'];
         $Price = $_POST['Price'];
         //tạo kết nối tới csdl
         //lấy tất cả các bản ghi từ kết quả
-        $sql = "INSERT INTO  product VALUES productid = '".$Id."', productname='".$PrName."', origin='".$Origin."',description='".$Des."', Price='".$Price."'";
-
+        $sql = "INSERT INTO  product (productid,productname, origin,description, price )VALUES ('$Id', '$PrName', '$Origin', '$Des', '$Price')";
         $rows=query($connection,$sql);
         
         if(count($rows)>0){
