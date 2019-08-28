@@ -135,7 +135,7 @@
     <div class="right">
       <?php
         include 'db.php';
-        $ProductId =$_GET['ProductId'];
+        $productid =$_GET['productid'];
                     $sql = "SELECT * FROM product WHERE productid = '$productid'";
                     $result = pg_query($connection,$sql);
                     if (pg_num_rows($result) > 0) {

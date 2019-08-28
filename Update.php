@@ -13,16 +13,14 @@
 		//tạo kết nối tới csdl
 		//lấy tất cả các bản ghi từ kết quả
 		$sql = "UPDATE product SET productname='$PrName', origin='$Origin',description='$Des', price='$Price'
-		WHERE productid = '.$id.'";
+		WHERE productid = '$id'";
 		$rows=query($sql);
 		
 		if(count($rows)>0){
-			echo"<h1>Log succesfully. Come back</h1>";
+			echo"<h1>Update succesfully. Come back</h1>";
 			header("Location: ./Admin.php"); /* Redirect browser */
 		} else
-			echo"</h1>Log in fail. The account aren't exit</h1>";
+			echo"</h1>Update fail</h1>";
 	}
-	else
-		echo"Can't recieve username and password";
 	?>
 
