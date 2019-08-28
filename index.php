@@ -43,7 +43,7 @@
           <button class="btn btn-danger navbar-btn" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
             <div id="id01" class="modal">
               
-              <form class="modal-content animate" action="signup.php" method="POST">
+              <form class="modal-content animate" action="SignUp.php" method="POST">
                 <div class="imgcontainer">
                   <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
                   <img src="images/img_avatar2.png" alt="Avatar" class="avatar">
