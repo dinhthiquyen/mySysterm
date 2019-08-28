@@ -19,9 +19,9 @@
     $sql = "INSERT INTO accountuser (username, password)
     VALUES ('$uname', '$psw')";
 
-    if (mysqli_query($connection, $sql)) {
+    if (pg_query($connection, $sql)) {
             echo "Sign up succesfully"; 
-            header("Location: http://localhost:8080/web/Asm/Home.php"); /* Redirect browser */
+            header("Location: ./index.php"); /* Redirect browser */
         } else {
             echo "Sign up fail ";
         }

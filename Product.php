@@ -37,20 +37,20 @@
                 <div class="container">
                     <img src="<?php echo $row["image"]?>" alt="Avatar" class="avatar"><br>
                     ID: <br>
-                    <input type="hidden" name="id" class="txtField" value="<?php echo $row['productid']; ?>">
+                    <input type="hidden" name="id" class="txtField" value="<?php echo $row['productid']; ?>"  >
                     <input type="text" name="id"  value="<?php echo $row['productid']; ?>">
                     <br>
                     Product Name: <br>
-                    <input type="text" name="PrName" class="txtField" value="<?php echo $row["productname"];?>">
+                    <input type="text" name="PrName" class="txtField" value="<?php echo $row["productname"];?>" required>
                     <br>
                     Origin<br>
-                    <input type="text" name="Origin" class="txtField" value="<?php echo $row["origin"];?>">
+                    <input type="text" name="Origin" class="txtField" value="<?php echo $row["origin"];?>" required>
                     <br>
                     Price<br>
-                    <input type="text" name="Price" class="txtField" value="<?php echo $row["price"];?>">
+                    <input type="text" name="Price" class="txtField" value="<?php echo $row["price"];?>" required>
                     <br>
                     Description::<br>
-                    <input type="text" name="Des" class="txtField" value="<?php echo $row["description"];?>">
+                    <input type="text" name="Des" class="txtField" value="<?php echo $row["description"];?>" required>
                     <br>
                     <input type="submit" name="submit" value="Submit" class="buttom">
                 </div>

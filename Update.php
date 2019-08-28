@@ -13,7 +13,7 @@
 		//lấy tất cả các bản ghi từ kết quả
 		$sql = "UPDATE product SET productname='$PrName', origin='$Origin', description='$Des', price='$Price'
 		WHERE productid = '$id'";
-		$rows=query($sql);
+		$rows=pg_query($connection, $sql);
 		
 		if(count($rows)>0){
 			echo"<h1>Update succesfully. Come back</h1>";
