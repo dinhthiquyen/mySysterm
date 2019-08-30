@@ -19,7 +19,7 @@
         $sql = "INSERT INTO  product(productid, productname, origin, description, price)VALUES ('$Id', '$PrName', '$Origin', '$Des', '$Price')";  
         if (pg_query($connection, $sql)) {
             echo "Update succesfully"; 
-            header("Location: ./admin.php"); /* Redirect browser */
+            header("Location: ./Admin.php"); /* Redirect browser */
         } else {
             echo "Update fail ";
         }
