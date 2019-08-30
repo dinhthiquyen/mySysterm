@@ -16,7 +16,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if(isset($_POST["uname"])) { $uname = $_POST['uname']; }
         if(isset($_POST["psw"])) { $psw = $_POST['psw']; }
-    $sql = "INSERT INTO accountuser (username, password)
+    $sql = "INSERT INTO accountuser(username, password)
     VALUES ('$uname', '$psw')";
 
     if (pg_query($connection, $sql)) {

@@ -12,14 +12,13 @@
 		//tạo kết nối tới csdl
 		//lấy tất cả các bản ghi từ kết quả
 		$sql = "UPDATE product SET productname='$PrName', origin='$Origin', description='$Des', price='$Price'
-		WHERE productid = '$id'";
-		$rows=pg_query($connection, $sql);
-		
-		if(count($rows)>0){
-			echo"<h1>Update succesfully. Come back</h1>";
-			header("Location: ./Admin.php"); /* Redirect browser */
-		} else
-			echo"</h1>Update fail</h1>";
+		WHERE productid = '$id'";	
+		if (pg_query($connection, $sql)) {
+            echo "Sign up succesfully"; 
+            header("Location: ./admin.php"); /* Redirect browser */
+        } else {
+            echo "Sign up fail ";
+        }
 	}
 	?>
 
