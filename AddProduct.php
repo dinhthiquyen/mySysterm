@@ -17,7 +17,8 @@
         //tạo kết nối tới csdl
         //lấy tất cả các bản ghi từ kết quả
         $sql = "INSERT INTO  product(productid, productname, origin, description, price)VALUES ('$Id', '$PrName', '$Origin', '$Des', '$Price')";  
-        if (pg_query($connection, $sql)) {
+
+        if (pg_query( $sql)) {
             echo "Update succesfully"; 
             header("Location: ./Admin.php"); /* Redirect browser */
         } else {
