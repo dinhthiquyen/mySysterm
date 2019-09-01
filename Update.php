@@ -20,7 +20,7 @@
 		WHERE productid = '$id'";	
 		pg_query($connection, $sql);
            
-        header("Location: ./admin.php"); /* Redirect browser */
+        header("Location: ./Admin.php"); /* Redirect browser */
        
 	}
 	?>
