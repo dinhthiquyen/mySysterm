@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Littelest PetS Shop</title>
+  <title>Littelest Shop</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="HomeCss.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
   <div class="container-fluid">
     <ul class="nav navbar-nav">
       <li class="active"><a href="Home.php">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Cat Breeds<span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Toys Breeds<span class="caret"></span></a>
         <ul class="dropdown-menu">
             <?php include 'Catalogy.php';?>
         </ul>
