@@ -1,6 +1,11 @@
 <?php 
 
 	include 'db.php';
+	$id="";
+	$PrName="";
+    $Origin="";
+    $Des="";
+    $Price="";
 
 	if(isset($_POST['id'])&& isset($_POST['PrName'])&& isset($_POST['Origin'])&& isset($_POST['Des'])&& isset($_POST['Price']))
 	{	
