@@ -18,12 +18,10 @@
 		//lấy tất cả các bản ghi từ kết quả
 		$sql = "UPDATE product SET productname='$PrName', origin='$Origin', description='$Des', price='$Price'
 		WHERE productid = '$id'";	
-		if (pg_query($connection, $sql)) {
-            echo "Sign up succesfully"; 
-            header("Location: ./admin.php"); /* Redirect browser */
-        } else {
-            echo "Sign up fail ";
-        }
+		pg_query($connection, $sql);
+           
+        header("Location: ./admin.php"); /* Redirect browser */
+       
 	}
 	?>
 
